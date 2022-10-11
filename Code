@@ -1,0 +1,15 @@
+  ifconfig
+  mkdir keisuke
+  cd keisuke
+  ls
+  hadoop fs -mkdir /Map_reduce
+  hadoop fs -copyFromLocal /home/edureka/Desktop/keisuke /Map_reduce
+  cd Desktop
+  cd ..
+  ls
+  hadoop jar hadoop-mapreduce-examples-2.2.0.jar 
+  hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordcount /Map_reduce/keisuke /Manoj/Count
+  hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordmean /Map_reduce/keisuke /Manoj/Mean
+  hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordmedian /Map_reduce/keisuke /Manoj/Median
+  hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordstandarddeviation /Map_reduce/keisuke /Manoj/SD
+ 
